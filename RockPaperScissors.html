@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissors</title>
+    <script src="./RockPaperScissors.js"></script>
+</head>
+<body>
+    <h1>Pick a hand!</h1>
+    <button onclick="
+        let computerMove = pickComputerMove();
+        let result = '';
+        if ('Rock' === computerMove){
+            alert('Tie!');
+        } else if ('Paper' === computerMove){
+            alert('You lose!');
+        } else {
+            alert('You win!');
+        }
+        ">Rock</button>
+        
+    <button onclick="
+        let computerMove = pickComputerMove();
+        let result = '';
+        if ('Rock' === computerMove){
+            result = 'Tie!';
+
+        } else if ('Paper' === computerMove){
+            result = 'You lose!';
+
+        } else {
+            result = 'You win!';
+        }
+
+        alert (`You pick Paper, the consolee pick ${computerMove}, the result is ${result}`);
+        ">Paper</button>
+
+    <button onclick="alert(pickComputerMove());
+    const object1={
+        message: 'hola',
+    }
+    object1.holi= 'queso';
+    
+    console.log(object1)">Scissors</button>
+
+</body>
+</html>
